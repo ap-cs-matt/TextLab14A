@@ -6,6 +6,11 @@ public class TextLab14A_Main extends Applet {
 
 	public void paint(Graphics g) {
 		drawGrid(g);
+		Shape square = new square(g);
+		Shape triangle = new triangle(g);
+		Shape circle = new circle(g);
+		Shape octagon = new octagon(g);
+		
 	}
 
 	public void drawGrid(Graphics g) {
@@ -13,6 +18,4 @@ public class TextLab14A_Main extends Applet {
 		g.drawLine(10, 300, 810, 300);
 		g.drawLine(410, 10, 410, 610);
 	}
-	//hellooo
-	//hi
 }

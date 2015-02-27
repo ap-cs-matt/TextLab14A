@@ -1,23 +1,27 @@
 import java.awt.*;
 
 public class square implements Shape {
-	
-	
-	public square(){
-		
-		
+
+	public square(Graphics g) {
+
+		drawShape(g);
+		displayName(g);
+		displayNumSides(g);
+
 	}
-	
+
 	public void drawShape(Graphics g) {
+
+		g.fillRect(155, 100, 100, 100);
 	}
 
 	public void displayName(Graphics g) {
-		// TODO Auto-generated method stub
+		g.drawString("Square",25,25);
 
 	}
 
 	public void displayNumSides(Graphics g) {
-		// TODO Auto-generated method stub
+		g.drawString("A square has 4 sides",140,226);
 
 	}
 }

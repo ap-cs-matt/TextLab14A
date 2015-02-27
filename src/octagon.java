@@ -1,19 +1,39 @@
 import java.awt.Graphics;
+import java.awt.Polygon;
 
 public class octagon implements Shape {
 
+	public octagon(Graphics g) {
+
+		drawShape(g);
+		displayName(g);
+		displayNumSides(g);
+
+	}
+
 	public void drawShape(Graphics g) {
-		// TODO Auto-generated method stub
+		Polygon o = new Polygon();
+		o.addPoint(147, 415);
+		o.addPoint(180, 380);
+		o.addPoint(230, 380);
+		o.addPoint(263, 415);
+
+		o.addPoint(263, 465);
+		o.addPoint(230, 500);
+		o.addPoint(180, 500);
+		o.addPoint(147, 465);
+
+		g.fillPolygon(o);
 
 	}
 
 	public void displayName(Graphics g) {
-		// TODO Auto-generated method stub
+		g.drawString("Octagon", 25, 320);
 
 	}
 
 	public void displayNumSides(Graphics g) {
-		// TODO Auto-generated method stub
+		g.drawString("A octagon has 8 sides", 140, 521);
 
 	}
 
