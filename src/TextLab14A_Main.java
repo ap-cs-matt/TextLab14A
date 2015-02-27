@@ -18,4 +18,4 @@ public class TextLab14A_Main extends Applet {
 		g.drawLine(10, 300, 810, 300);
 		g.drawLine(410, 10, 410, 610);
 	}
-}//gfdgdfgfdgdfgdfgfdgtgdg
+}//gfdgdfgfdgdfgdfgfdgtgdgsdfgfdgfdsg
