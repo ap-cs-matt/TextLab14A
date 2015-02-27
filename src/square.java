@@ -1,6 +1,13 @@
 import java.awt.*;
 
 public class square implements Shape {
+	
+	
+	public square(){
+		
+		
+	}
+	
 	public void drawShape(Graphics g) {
 	}
 
