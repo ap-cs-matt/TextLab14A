@@ -6,7 +6,7 @@ class triangle implements Shape {
 	public triangle(Graphics g){
 		
 		drawShape(g);
-		displayName(g);
+		displayName(g, new Point(430,25));
 		displayNumSides(g);
 		
 	}
@@ -20,8 +20,8 @@ class triangle implements Shape {
 
 	}
 
-	public void displayName(Graphics g) {
-		g.drawString("Triangle",430,25);
+	public void displayName(Graphics g, Point point) {
+		g.drawString("Triangle",point.getX(),point.getY());
 
 	}
 

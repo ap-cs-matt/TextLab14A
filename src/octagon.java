@@ -6,7 +6,7 @@ public class octagon implements Shape {
 	public octagon(Graphics g) {
 
 		drawShape(g);
-		displayName(g);
+		displayName(g, new Point(25,320));
 		displayNumSides(g);
 
 	}
@@ -27,8 +27,8 @@ public class octagon implements Shape {
 
 	}
 
-	public void displayName(Graphics g) {
-		g.drawString("Octagon", 25, 320);
+	public void displayName(Graphics g, Point point) {
+		g.drawString("Octagon", point.getX(),point.getY());
 
 	}
 

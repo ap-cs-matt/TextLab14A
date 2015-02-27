@@ -6,7 +6,7 @@ public class circle implements Shape {
 public circle(Graphics g){
 		
 		drawShape(g);
-		displayName(g);
+		displayName(g, new Point(430,320));
 		displayNumSides(g);
 		
 	}
@@ -16,8 +16,8 @@ public circle(Graphics g){
 
 	}
 
-	public void displayName(Graphics g) {
-		g.drawString("Circle",430,320);
+	public void displayName(Graphics g, Point point) {
+		g.drawString("Circle",point.getX(),point.getY());
 
 	}
 

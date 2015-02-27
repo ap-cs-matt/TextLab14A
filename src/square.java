@@ -5,7 +5,7 @@ public class square implements Shape {
 	public square(Graphics g) {
 
 		drawShape(g);
-		displayName(g);
+		displayName(g, new Point(25,25));
 		displayNumSides(g);
 
 	}
@@ -15,8 +15,8 @@ public class square implements Shape {
 		g.fillRect(155, 100, 100, 100);
 	}
 
-	public void displayName(Graphics g) {
-		g.drawString("Square",25,25);
+	public void displayName(Graphics g, Point point) {
+		g.drawString("Square",point.getX(),point.getY());
 
 	}
 
