@@ -20,7 +20,7 @@ class triangle implements Shape {
 
 	}
 
-	public void displayName(Graphics g, Point point) {
+	public void displayName(Graphics g) {
 		g.drawString("Triangle",point.getX(),point.getY());
 
 	}

@@ -27,7 +27,7 @@ public class octagon implements Shape {
 
 	}
 
-	public void displayName(Graphics g, Point point) {
+	public void displayName(Graphics g) {
 		g.drawString("Octagon", point.getX(),point.getY());
 
 	}

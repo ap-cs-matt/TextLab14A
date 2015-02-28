@@ -16,7 +16,7 @@ public circle(Graphics g){
 
 	}
 
-	public void displayName(Graphics g, Point point) {
+	public void displayName(Graphics g) {
 		g.drawString("Circle",point.getX(),point.getY());
 
 	}

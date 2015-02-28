@@ -10,6 +10,22 @@ public class TextLab14A_Main extends Applet {
 		Shape triangle = new triangle(g);
 		Shape circle = new circle(g);
 		Shape octagon = new octagon(g);
+	
+		ArrayList<Shape> shapes = new ArrayList<Shape>();
+		
+		shapes.add(square);
+		shapes.add(triangle);
+		shapes.add(circle);
+		shapes.add(octagon);
+		
+		for (Shape shape: shapes){
+			shape.drawShape(g);
+			shape.displayNumSides(g);
+			shape.displayName(g);
+		}
+		
+		
+		
 		
 	}
 
