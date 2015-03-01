@@ -22,20 +22,12 @@ public class TextLab14A_Main extends Applet {
 			shape.drawShape(g);
 			shape.displayNumSides(g);
 			shape.displayName(g);
-		}
-		
-		
-		
-		
+		}	
 	}
 
 	public void drawGrid(Graphics g) {
 		g.drawRect(10, 10, 800, 600);
 		g.drawLine(10, 300, 810, 300);
 		g.drawLine(410, 10, 410, 610);
-	}
-	
-	public void displayShape(Shape shape){
-		
 	}
 }

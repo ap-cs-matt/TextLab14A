@@ -3,11 +3,19 @@ import java.awt.Polygon;
 
 public class octagon implements Shape {
 
+	private String title;
+	private Point titleLocation;
+
+	private String description;
+	private Point descriptionLocation;
+
 	public octagon(Graphics g) {
 
-		drawShape(g);
-		displayName(g, new Point(25,320));
-		displayNumSides(g);
+		title = "Octagon";
+		titleLocation = new Point(25, 320);
+
+		description = "A octagon has 8 sides";
+		descriptionLocation = new Point(140, 521);
 
 	}
 
@@ -28,13 +36,11 @@ public class octagon implements Shape {
 	}
 
 	public void displayName(Graphics g) {
-		g.drawString("Octagon", point.getX(),point.getY());
-
+		g.drawString(title, titleLocation.getX(), titleLocation.getY());
 	}
 
 	public void displayNumSides(Graphics g) {
-		g.drawString("A octagon has 8 sides", 140, 521);
-
+		g.drawString(description, descriptionLocation.getX(),
+				descriptionLocation.getY());
 	}
-
 }

@@ -2,32 +2,38 @@ import java.awt.*;
 
 class triangle implements Shape {
 
-	
-	public triangle(Graphics g){
-		
-		drawShape(g);
-		displayName(g, new Point(430,25));
-		displayNumSides(g);
-		
+	private String title;
+	private Point titleLocation;
+
+	private String description;
+	private Point descriptionLocation;
+
+	public triangle(Graphics g) {
+
+		title = "Triangle";
+		titleLocation = new Point(430, 25);
+
+		description = "A triangle has 3 sides";
+		descriptionLocation = new Point(555, 226);
+
 	}
-	
+
 	public void drawShape(Graphics g) {
 		Polygon t = new Polygon();
 		t.addPoint(525, 200);
-		t.addPoint(725,200);
-		t.addPoint(625,100);
+		t.addPoint(725, 200);
+		t.addPoint(625, 100);
 		g.fillPolygon(t);
 
 	}
 
 	public void displayName(Graphics g) {
-		g.drawString("Triangle",point.getX(),point.getY());
-
+		g.drawString(title, titleLocation.getX(), titleLocation.getY());
 	}
 
 	public void displayNumSides(Graphics g) {
-		g.drawString("A triangle has 3 sides",555,226);
-
+		g.drawString(description, descriptionLocation.getX(),
+				descriptionLocation.getY());
 	}
 
 }
