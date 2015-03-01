@@ -5,6 +5,8 @@ import java.util.*;
 public class TextLab14A_Main extends Applet {
 
 	public void paint(Graphics g) {
+		
+		Antialiasing.applyAntialiasing(g);
 		drawGrid(g);
 		Shape square = new square(g);
 		Shape triangle = new triangle(g);
